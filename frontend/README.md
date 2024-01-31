@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Projeto Google Meet Replicado
 
-## Getting Started
+## Sobre Mim
+Olá, sou Wesley Moraes, um entusiasta de tecnologia e desenvolvedor de software FullStack. Meu interesse aprimorar interfaces web me levaram a embarcar neste projeto de construção de um site de
+venda de bicicletas elétricas, onde serão aplicados todas técnicas e boas práticas.
 
-First, run the development server:
+## Informações Técnicas Do Desenvolvedor:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **HTML:** Linguagem fundamental para estruturar páginas web.
+- **CSS:** Utilizado para estilizar e dar vida às minhas criações.
+- **Tailwind:** Utilizado para otimizar meus projetos com react.
+- **JavaScript:** Utilizado em projetos pessoais.
+- **Typescript:** Utilizado em todos os projetos que eu faço usando react ou next.
+- **React:** Utilizado para criar projetos frontend complexos.
+- **NextJs-13:** Utilizado para projetos frontEnd robustos.
+- **Java:** Utilizado em ambiente de estudos.
+- **C#:** Utilizado em projetos pessoais e profissionais .
+- **.Net6:** Utilizado em projetos pessoais e profissionais.
+- **Springboot:** Utilizado em ambiente de estudos.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Visão Geral
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Este projeto é uma replicação do Google Meet, uma plataforma de videoconferência online, desenvolvida utilizando Next.js no frontend. O objetivo é criar uma experiência completa de comunicação, incluindo áudio, chat e vídeo, para facilitar reuniões virtuais e colaboração online.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Tecnologias Utilizadas
 
-## Learn More
+- **Next.js:** Framework React para construção de aplicações web modernas.
+- **WebRTC:** Para comunicação em tempo real de áudio e vídeo.
+- **Socket.io:** Para comunicação em tempo real para o recurso de chat.
+- **Outras bibliotecas do ecossistema React:** Redux para gerenciamento de estado, Styled Components para estilização, entre outras.
 
-To learn more about Next.js, take a look at the following resources:
+## Funcionalidades Principais
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. **Vídeo Conferência:**
+   - Integração do WebRTC para permitir chamadas de vídeo entre os participantes.
+   - Controle de câmera e microfone durante a chamada.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+2. **Chat em Tempo Real:**
+   - Utilização do Socket.io para fornecer um recurso de chat em tempo real.
+   - Mensagens de texto entre os participantes da reunião.
 
-## Deploy on Vercel
+3. **Áudio Conferência:**
+   - Implementação de funcionalidade de áudio para comunicação durante a reunião.
+   - Controles de áudio, como mudo e volume.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Progresso do Projeto
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Versão Atual: 
+Nesta versão do projeto, estabeleci apenas o header da página.
+
+![Versão ](./public/image/header.png)
+### Versão Atual: 
+Nesta versão do projeto, é estabelicido a pagina de inicio do chat.
+
+![Versão ](./public/image/meet-into.png)
+### Versão Atual: 
+Nesta versão do projeto, é estabelido o ingresso para uma nova reunião.
+
+![Versão ](./public/image/new-meet.png)
+### Versão Atual: 
+Nesta versão do projeto, sala de bate papo.
+
+![Versão ](./public/image/room.png)
