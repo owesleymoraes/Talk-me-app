@@ -18,6 +18,7 @@ const config: Config = {
         "gray-950": "#4e4e4e",
         black: "#0f0f0f",
         primary: "#81e6D9",
+        secondary: "#212121",
       },
     },
   },
