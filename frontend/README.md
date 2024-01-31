@@ -49,3 +49,15 @@ Este projeto é uma replicação do Google Meet, uma plataforma de videoconferê
 Nesta versão do projeto, estabeleci apenas o header da página.
 
 ![Versão ](./public/image/header.png)
+### Versão Atual: 
+Nesta versão do projeto, é estabelicido a pagina de inicio do chat.
+
+![Versão ](./public/image/meet-into.png)
+### Versão Atual: 
+Nesta versão do projeto, é estabelido o ingresso para uma nova reunião.
+
+![Versão ](./public/image/new-meet.png)
+### Versão Atual: 
+Nesta versão do projeto, sala de bate papo.
+
+![Versão ](./public/image/room.png)
