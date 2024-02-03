@@ -38,8 +38,14 @@ Este projeto é uma replicação do Google Meet, uma plataforma de videoconferê
 2. **Chat em Tempo Real:**
    - Utilização do Socket.io para fornecer um recurso de chat em tempo real.
    - Mensagens de texto entre os participantes da reunião.
+   - 
+3. **Express:**
+   - Utilizado como servidor.
+   - 
+4. **Stun Server:**
+   - Utilizado para a comunicação P2P, é usado como um servidor.
 
-3. **Áudio Conferência:**
+5. **Áudio Conferência:**
    - Implementação de funcionalidade de áudio para comunicação durante a reunião.
    - Controles de áudio, como mudo e volume.
 
@@ -57,7 +63,13 @@ Nesta versão do projeto, é estabelicido a pagina de inicio do chat.
 Nesta versão do projeto, é estabelido o ingresso para uma nova reunião.
 
 ![Versão ](./frontend/public/image/new-meet.png)
+
 ### Versão Atual: 
 Nesta versão do projeto, sala de bate papo.
 
 ![Versão ](./frontend/public/image/room.png)
+
+### Versão Atual: 
+Nesta versão do projeto, Ativição da primeira camera para o bate papo.
+
+![Versão ](./frontend/public/image/camera.png)
