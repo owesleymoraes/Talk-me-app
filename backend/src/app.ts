@@ -34,7 +34,34 @@ class App {
       console.log("Socket connected: " + socket.id);
 
       socket.join(data.roomId);
+      socket.join(data.socketId);
 
+      const roomsSession = Array.from(socket.rooms);
+
+      if (roomsSession.length > 1) {
+        socket.to(data.roomId).emit("new user", {
+          socketId: socket.id,
+          username: data.userName,
+        });
+      }
+    });
+
+    socket.on("newUserStart", (data) => {
+      console.log("Novo usuário chegou: ", data);
+      socket.to(data.to).emit("newUserStart", {
+        sender: data.sender,
+      });
+    });
+
+    socket.on("sdp", (data) => {
+      socket.to(data.to).emit("sdp", {
+        description: data.description,
+        sender: data.sender,
+      });
+    });
+
+    socket.on("chat", (data) => {
+      console.log("🚀 - App - socket.on ~ data", data);
       socket.broadcast.to(data.roomId).emit("chat", {
         message: data.message,
         userName: data.userName,
