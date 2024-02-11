@@ -31,7 +31,7 @@ class App {
   private socketEvents(socket: Socket) {
     console.log("Socket connect: " + socket.id);
     socket.on("subscribe", (data) => {
-      console.log("Socket connected: " + socket.id);
+      console.log("usuario inserido na sala: " + data.roomId);
 
       socket.join(data.roomId);
       socket.join(data.socketId);
@@ -50,12 +50,20 @@ class App {
       console.log("Novo usuário chegou: ", data);
       socket.to(data.to).emit("newUserStart", {
         sender: data.sender,
+        username: data.username,
       });
     });
 
     socket.on("sdp", (data) => {
       socket.to(data.to).emit("sdp", {
         description: data.description,
+        sender: data.sender,
+      });
+    });
+
+    socket.on("ice candidates", (data) => {
+      socket.to(data.to).emit("ice candidates", {
+        candidate: data.candidate,
         sender: data.sender,
       });
     });
@@ -67,6 +75,11 @@ class App {
         userName: data.userName,
         time: data.time,
       });
+    });
+
+    socket.on("disconnect", () => {
+      console.log("🚀 - Socket desconectado", socket.id);
+      socket.disconnect();
     });
   }
 }
