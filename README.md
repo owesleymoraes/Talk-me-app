@@ -27,13 +27,14 @@ Este projeto é uma replicação do Google Meet, uma plataforma de videoconferê
 - **Next.js:** Framework React para construção de aplicações web modernas.
 - **WebRTC:** Para comunicação em tempo real de áudio e vídeo.
 - **Socket.io:** Para comunicação em tempo real para o recurso de chat.
-- **Outras bibliotecas do ecossistema React:** Redux para gerenciamento de estado, Styled Components para estilização, entre outras.
 
 ## Funcionalidades Principais
 
 1. **Vídeo Conferência:**
    - Integração do WebRTC para permitir chamadas de vídeo entre os participantes.
    - Controle de câmera e microfone durante a chamada.
+   - Compartilhamento de tela.
+   - Interrupção da chamada.
 
 2. **Chat em Tempo Real:**
    - Utilização do Socket.io para fornecer um recurso de chat em tempo real.
@@ -48,6 +49,10 @@ Este projeto é uma replicação do Google Meet, uma plataforma de videoconferê
 5. **Áudio Conferência:**
    - Implementação de funcionalidade de áudio para comunicação durante a reunião.
    - Controles de áudio, como mudo e volume.
+   - 
+6. **Links Importantes:**
+   - [Socket.io](https://socket.io/)
+   - [WebRTC](https://webrtc.org/?hl=pt-br)
 
 ## Progresso do Projeto
 
@@ -73,3 +78,8 @@ Nesta versão do projeto, sala de bate papo.
 Nesta versão do projeto, Ativição da primeira camera para o bate papo.
 
 ![Versão ](./frontend/public/image/camera.png)
+
+### Versão Atual: 
+Nesta versão do projeto, é finalizado a interação do chat com duas pessoas na sala e funcionalidades dos botões no footer de interação de mídias: microfone, câmera e compartilhamento de tela, porém alguns bugs precisam serem corrigidos. Já existe a ativivação de duas câmeras. Para a tela inicial ainda é necessário retirar alguns nomes mocados assim como a permissão de usuários novos pelo id da sala.
+
+![Versão ](./frontend/public/image/two-cameras.png)
